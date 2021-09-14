@@ -26,16 +26,23 @@ const NavBar = () => {
   ];
 
   return (
-    <Navbar className='nav-bar shadow py-4' expand>
+    <Navbar className='nav-bar shadow py-4' expand='md'>
       <Container>
         <Navbar.Brand>Ismail El Shinnawy</Navbar.Brand>
-        <Nav>
-          {navBarItems.map(navBarItem => (
-            <LinkContainer key={`${navBarItem.id}_nav_item`} to={navBarItem.linkTo} exact>
-              <Nav.Link className='px-4 rounded'>{navBarItem.title}</Nav.Link>
-            </LinkContainer>
-          ))}
-        </Nav>
+        <Navbar.Toggle aria-controls='navbar-nav' />
+        <Navbar.Collapse id='navbar-nav'>
+          <Nav className='ms-auto mt-4 mt-md-0'>
+            {navBarItems.map(navBarItem => (
+              <LinkContainer
+                key={`${navBarItem.id}_nav_item`}
+                to={navBarItem.linkTo}
+                exact
+              >
+                <Nav.Link className='px-4 rounded'>{navBarItem.title}</Nav.Link>
+              </LinkContainer>
+            ))}
+          </Nav>
+        </Navbar.Collapse>
       </Container>
     </Navbar>
   );
