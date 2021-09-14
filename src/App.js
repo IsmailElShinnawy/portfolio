@@ -1,10 +1,26 @@
-import './App.css';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 
-function App() {
+import Home from './home/pages/Home';
+import NavBar from './shared/components/NavBar';
+
+const App = () => {
   return (
-    <div>
-    </div>
+    <Router>
+      <NavBar />
+      <Switch>
+        <Route path='/' exact>
+          <p>HOME</p>
+        </Route>
+        <Route path='/projects' exact>
+          <p>PROJECTS</p>
+        </Route>
+        <Route path='/blogs' exact>
+          <p>BLOGS</p>
+        </Route>
+        <Redirect to='/' />
+      </Switch>
+    </Router>
   );
-}
+};
 
 export default App;
