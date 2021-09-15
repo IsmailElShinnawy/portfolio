@@ -1,0 +1,25 @@
+@import '../../scss/variables.scss';
+.whoAmI {
+  .my-name {
+    font-weight: 600;
+  }
+  .roles {
+    font-weight: 400;
+    min-height: 150px;
+  }
+  .current-role {
+    background: linear-gradient(to bottom, #8b0000 0%, #9400d3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  @media screen and (max-width: 992px) {
+    .roles {
+      min-height: 250px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .roles {
+      min-height: 100px;
+    }
+  }
+}

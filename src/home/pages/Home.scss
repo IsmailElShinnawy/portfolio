@@ -1,16 +1,15 @@
-.about-me {
+@import '../../scss/variables.scss';
+.about-me-section {
   .my-image {
     width: 100%;
     border-radius: 50%;
+  }
+  .social-links {
+    opacity: 0.7;
   }
   @media screen and (max-width: 768px) {
     .my-image {
       width: 300px;
     }
   }
-  //   @media screen and (max-width: 1400px) {
-  //     .my-image {
-  //       width: 350px;
-  //     }
-  //   }
 }

@@ -33,7 +33,7 @@ const WhoAmI = () => {
         oldCurrentText => oldCurrentText + roles[currentRoleIdx][currentCharIdx]
       );
       currentCharIdx++;
-      setTimeout(type, 125);
+      setTimeout(type, 200);
     };
     type();
 
@@ -44,12 +44,13 @@ const WhoAmI = () => {
 
   return (
     <div className='whoAmI'>
-      <div className='display-6'>Hola 👋, I'm</div>
+      <h2 className=''>Hola &#128075;, I'm</h2>
       <div className='display-2 my-name'>
         <strong>Ismail El Shinnawy</strong>
       </div>
-      <div className='display-4' id='whoAmI'>
-        {`and I am ${currentText}`}
+      <div className='display-4 roles' id='whoAmI'>
+        <span>{'& I am '}</span>
+        <span className='current-role'>{currentText}</span>
       </div>
     </div>
   );
