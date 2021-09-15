@@ -22,21 +22,19 @@ const tabs = [
 ];
 
 const AboutMe = () => {
-  const [activeTab, setActiveTab] = useState();
+  const [activeTab, setActiveTab] = useState('aboutMe');
   return (
     <div className='mx-auto about-me'>
-      <button type='button' className='btn mx-3'>
-        About Me
-      </button>
-      <button type='button' className='btn mx-3'>
-        Education
-      </button>
-      <button type='button' className='btn mx-3'>
-        Skills
-      </button>
-      <button type='button' className='btn mx-3'>
-        Contact
-      </button>
+      {tabs.map(tab => (
+        <button
+          key={tab.id}
+          type='button'
+          className={`tab p-0 py-2 mx-3 ${tab.id === activeTab ? 'active' : ''}`}
+          onClick={() => setActiveTab(tab.id)}
+        >
+          {tab.title}
+        </button>
+      ))}
     </div>
   );
 };

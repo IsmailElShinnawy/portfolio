@@ -20,21 +20,21 @@ const Home = () => {
                 target='_blank'
                 rel='noreferrer'
               >
-                <img src={githubIcon} alt='github' className='me-3' />
+                <img src={githubIcon} alt='github' className='me-2' />
               </a>
               <a
                 href='https://linkedin.com/in/ismail-elshennawy/'
                 target='_blank'
                 rel='noreferrer'
               >
-                <img src={linkedInIcon} alt='linkedIn' className='me-3' />
+                <img src={linkedInIcon} alt='linkedIn' className='mx-2' />
               </a>
               <a
                 href='https://twitter.com/IsmailShinnawy'
                 target='_blank'
                 rel='noreferrer'
               >
-                <img src={twitterIcon} alt='twitter' className='me-3' />
+                <img src={twitterIcon} alt='twitter' className='ms-2' />
               </a>
             </div>
           </div>
