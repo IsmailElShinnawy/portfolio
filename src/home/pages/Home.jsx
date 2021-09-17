@@ -43,7 +43,7 @@ const Home = () => {
             <div className='d-flex'></div>
           </div>
         </div>
-        <div className='d-flex mt-5'>
+        <div className='mt-5 about-me'>
           <AboutMe />
         </div>
       </section>

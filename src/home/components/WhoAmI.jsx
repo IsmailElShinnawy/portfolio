@@ -44,7 +44,7 @@ const WhoAmI = () => {
 
   return (
     <div className='whoAmI'>
-      <h2 className=''>Hola &#128075;, I'm</h2>
+      <h2 className=''>Hola 👋🏼, I'm</h2>
       <div className='display-2 my-name'>
         <strong>Ismail El Shinnawy</strong>
       </div>
