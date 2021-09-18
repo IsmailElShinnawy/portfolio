@@ -3,3 +3,11 @@
 body {
   background: #fafafa;
 }
+
+.link {
+  color: $orange !important;
+}
+
+.link:focus {
+  color: $orange !important;
+}

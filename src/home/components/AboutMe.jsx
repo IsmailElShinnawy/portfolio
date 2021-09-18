@@ -13,8 +13,17 @@ const sections = [
     content: (
       <div>
         <p className='about-me-text'>
-          I am currently a software engineer 👨‍💻 at Mindeavors, there I transform business
-          ideas to software that people can make use of and enjoy.
+          I am currently a software engineer 👨‍💻 at{' '}
+          <a
+            className='link'
+            href='https://www.mindeavors.com/'
+            target='_blank'
+            rel='noreferrer'
+          >
+            Mindeavors
+          </a>
+          , there I transform business ideas to software that people can make use of and
+          enjoy.
         </p>
         <p className='about-me-text'>
           I am also a computer engineering 💻 junior @ the German University in Cairo,
