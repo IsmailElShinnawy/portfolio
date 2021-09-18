@@ -1,5 +1,9 @@
 import React from 'react';
 
+import selfImage from '../../assets/images/self-image.svg';
+import educationImage from '../../assets/images/education-image.svg';
+import skillsImage from '../../assets/images/skills-image.svg';
+
 import './AboutMe.scss';
 
 const sections = [
@@ -7,7 +11,7 @@ const sections = [
     id: 'aboutMe',
     title: 'About Me',
     content: (
-      <div className='content'>
+      <div>
         <p>
           I am currently a software engineer 👨‍💻 at Mindeavors, there I transform business
           ideas to software that people can make use of and enjoy.
@@ -23,16 +27,19 @@ const sections = [
         </p>
       </div>
     ),
+    imageSrc: selfImage,
   },
   {
     id: 'education',
     title: 'Education',
     content: <div></div>,
+    imageSrc: educationImage,
   },
   {
     id: 'skills',
     title: 'Skills',
     content: <div></div>,
+    imageSrc: skillsImage,
   },
   {
     id: 'contact',
@@ -55,10 +62,19 @@ const AboutMe = () => {
   //     </button>
   //   ))}
   // </div>
-  return sections.map(section => (
+  return sections.map((section, idx) => (
     <section key={section.id} className=''>
       <h2 className='display-5 title text-center pb-4'>{section.title}</h2>
-      {section.content}
+      <div className='row align-items-center'>
+        <div
+          className={`content col-12 col-md-8 ${idx % 2 === 0 ? 'order-1' : 'order-2'}`}
+        >
+          {section.content}
+        </div>
+        <div className={`col-12 col-md-4 ${idx % 2 === 0 ? 'order-2' : 'order-1'}`}>
+          <img src={section.imageSrc} alt='illustration' />
+        </div>
+      </div>
     </section>
   ));
 };
