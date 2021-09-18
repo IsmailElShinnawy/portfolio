@@ -3,13 +3,20 @@
 .about-me {
   .title {
     color: $secondary;
-    // position: relative;
-    // width: max-content;
   }
   .content {
     p {
       font-size: 1.3rem;
+    }
+    p.about-me-text {
       padding-bottom: 32px;
+    }
+    li {
+      list-style-type: none;
+    }
+    .years {
+      font-size: 0.9rem;
+      color: rgb(117, 117, 117);
     }
   }
   // .title::before {
