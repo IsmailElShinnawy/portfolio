@@ -1,6 +1,7 @@
 import myImage from '../../assets/images/me-cropped.jpg';
 import AboutMe from '../components/AboutMe';
 import WhoAmI from '../components/WhoAmI';
+import EducationAndExperience from '../components/EducationAndExperience';
 import githubIcon from '../../assets/images/github-fill.svg';
 import twitterIcon from '../../assets/images/twitter-fill.svg';
 import linkedInIcon from '../../assets/images/linkedin-box-fill.svg';
@@ -48,6 +49,9 @@ const Home = () => {
       </div>
       <section className='about-me mt-4 container'>
         <AboutMe />
+      </section>
+      <section className='edu-and-exp mt-5 container'>
+        <EducationAndExperience />
       </section>
     </main>
   );
