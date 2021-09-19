@@ -22,4 +22,9 @@
       min-height: 100px;
     }
   }
+  @media screen and (max-width: 576px) {
+    .roles {
+      min-height: 170px;
+    }
+  }
 }

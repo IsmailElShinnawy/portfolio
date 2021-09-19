@@ -1,24 +1,48 @@
 @import '../../scss/variables.scss';
 
 .about-me {
+  margin-top: -128px !important;
+  img {
+    width: 250px;
+    height: 250px;
+  }
+  .main {
+    border-top-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    background-color: #fafafa !important;
+  }
+  .about-me-text {
+    font-size: 1.2rem;
+  }
   .title {
-    color: $secondary;
+    position: relative;
+    width: max-content;
   }
-  .content {
-    p {
-      font-size: 1.3rem;
-    }
-    p.about-me-text {
-      padding-bottom: 32px;
-    }
-    li {
-      list-style-type: none;
-    }
-    .years {
-      font-size: 0.9rem;
-      color: rgb(117, 117, 117);
-    }
+  .title::before {
+    content: '';
+    position: absolute;
+    top: 85%;
+    display: block;
+    background-color: $secondary;
+    width: 70%;
+    height: 3px;
   }
+  // .content {
+  //   p {
+  //     font-size: 1.3rem;
+  //   }
+  //   p.about-me-text {
+  //     padding-bottom: 32px;
+  //   }
+  //   li {
+  //     list-style-type: none;
+  //   }
+  //   .years {
+  //     font-size: 0.9rem;
+  //     color: rgb(117, 117, 117);
+  //   }
+  // }
+  // -------------------------
   // .title::before {
   //   content: '';
   //   width: 100%;
